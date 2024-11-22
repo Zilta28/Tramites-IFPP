@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Título de la página</title>
+
+</head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+    h2{
+        font-family: Garamond;
+        font-size: 250%;
+        text-align: center;
+        background-color: #BC955B;
+        color:white;
+    }
+    h3{
+      color: #691B31 ;
+      font-size: 120%;
+    }
+    h5{
+        font-family: Garamond;
+        font-size: 250%;
+        color: #161212;
+        text-align: center;
+        background-color: #98989A;
+    }
+    h6{
+        font-family: Garamond;
+        font-size: 300%;
+        color: #161212;
+        text-align: center;
+        background-color: #BC955B;
+    }
+    p{
+        font-family: Garamond;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .justificado{
+        text-align: justify;
+    }
+    a{
+        font-family: Monaco;
+
+    }
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#A02142;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 50px;
+    height: auto;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #A02142;
+    color: #fff;
+    font-size: 130%;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .content {
+    padding: 20px;
+    position: relative; 
+    flex: 1;
+    
+  }
+  .content2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+  margin-top: 0;
+  flex-grow: 1;
+  background: #BC955B;
+  
+}
+
+.content3 {
+  padding: 20px;
+  position: relative;
+  flex: 1;
+  background: #DDC9A3;
+  margin-bottom: 0;
+}
+
+/*inicio cajas con botones*/
+  .box {
+    background-color: #98989A;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+
+
+  .box1 {
+    width: 250px;
+    height: 150px;
+  }
+
+  .box2 {
+    width: 250px;
+    height: 150px;
+  }
+
+  .box3 {
+    width: 250px;
+    height: 150px;
+  }
+
+  .button2 {
+    padding: 10px 20px;
+    background-color: #691B31;
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+/*final cajas con botones*/
+
+/*inicio imagen portada*/
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-bottom: 30%; 
+    overflow: hidden;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/*final imagen portada*/
+
+  footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 800px;
+    height: auto;
+    width: 100%;
+  }
+
+/*inicio mapa ajuste*/
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+/*final mapa ajuste*/    
+
+  @media (min-width: 768px) {
+    .map-responsive {
+      padding-bottom: 0;
+      height: 400px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .logo {
+      flex: 1;
+    }
+
+    .buttons {
+      margin-top: 0;
+    }
+    .content2 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  }
+  
+  </style>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/Logo.png" alt="Logo">
+    </div>
+    <div class="buttons">
+      <a href="inicio.html" class="button">Menú</a>
+      <a href="log.html" class="button">Administrador</a>
+    </div>
+  </header>
+  <div class="content1">
+        <div class="image-container">
+            <img src="img/Success with Marketing (1).png">
+        </div>
+</div>
+  <div class="content3">
+
+    <h2 class = "title">Inicio</h2>
+    <p>Sean bienvenidos prestatarios y prestatarias al Instituto de Formación Profesional.</p>
+    <p>Esta página está enfocado para los servicios de: Servicio Social, Prácticas Profesionales y Estadía Profesional. Donde podrán proporcionar sus datos para los procesos de cartas de aceptación y terminación, al igual que podrán adquirir el documento de control de horas.</p>
+    <p>Dado a la información de cada uno de los botones que se encuentran a continuación, deberán seguir las instrucciones en tiempo y forma, ser cuidadosos con la información a proporcionar.
+        <br>
+    <p>Finalmente leer cuidadosamente cada una de las indicaciones que les serán proporcionadas a continuación, al igual que contestar viablemente los documentos, una vez contestado los formularios correspondientes estos serán revisados por la encargada de esta área de servicio social.</p>  
+  </div>
+
+  <h5 class="title"> Proceso de servicios para los prestatarios de IFPP</h5>
+
+
+  <div class="content2">
+    <div class="box box1">
+      <h3>Servicio Social</h3>
+     
+      <a href="ss.html" class="button2">Comenzar</a>
+    </div>
+    <div class="box box2">
+      <h3>Prácticas Profesionales</h3>
+     
+      <a href="pp.html" class="button2">Comenzar</a>
+    </div>
+    <div class="box box3">
+      <h3>Estadía Profesional</h3>
+      
+      <a href="ep.html" class="button2">Comenzar</a>
+    </div>
+  </div>
+
+  <div class="content3">
+    <h2 class="title"> Contacto</h2>
+    <p>Si surge alguna duda acerca de tu proceso de servicio social, prácticas profesionales o estadía profesional. Favor de comunicarse con el área que se menciona a continuación y adquiriendo con los datos de la encargada. </p>
+    <p>Departamento de servicio social</p>
+    <p>Lic. Sheila Rubí Fernández Ramos</p>
+    <p>Correo electrónico: pgjhserviciosocial@gmail.com</p>
+    <br>
+  </div>
+
+
+  <div class="content">
+    <h6 class="title"> Nuestra ubicación</h6>
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.687272233419!2d-98.78534336264036!3d20.0635375452023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a056d12ea317%3A0xc7743a20f235dbdf!2sIFP%20Instituto%20de%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses-419!2smx!4v1682182546317!5m2!1ses-419!2smx" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <br><br>
+  </div>
+
+  <footer>
+    <img src="img/Final.png" class="footer-logo">
+  </footer>
+</body>
+</html>

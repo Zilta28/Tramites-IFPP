@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p{
+      font-family: serif;
+      font-size: 150%;  
+    }
+    li{
+      font-family: serif;
+      font-size: 100%;  
+    }
+
+    .form-group {
+      position: relative;
+    }
+    
+    .help-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    .help-icon:hover .help-text {
+      display: block;
+    }
+    
+    .help-text {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: -150%; /* Ajustar la posición a la derecha */
+      width: 200px;
+      max-width: calc(100vw - 40px); /* Limitar el ancho máximo al ancho del dispositivo */
+      padding: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+  </style>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <title>Servicio Social</title>
+  </head>
+<body>
+  <header>
+    <div class="logo-buttons-container">
+      <div class="logo">
+        <img src="img/Logo.png" alt="Logo">
+      </div>
+      <a href="index.html" class="button">Inicio</a>
+      <a href="inicio.html" class="button">Atrás</a>
+
+    </div>
+  </header>
+  <div class="content2">
+    <h1><center>Formulario de carta de aceptación para los prestatarios de Servicio Social</center></h1>
+  </div>
+  <div class="content3">
+    <div class="text-container">
+      <p>Estimado/a prestatario/a:</p>
+      <br>
+      <p>Reciba un cordial saludo y nuestro agradecimiento por su participación en nuestro programa de servicio social. Con el objetivo de facilitar el proceso de registro, nos complace proporcionarle las siguientes indicaciones para el llenado de datos en el formulario:</p>
+  
+      <ul>
+        <li>Verifique la documentación necesaria: Antes de comenzar a completar el formulario, le recomendamos asegurarse de contar con toda la documentación requerida.</li>
+        <li>Asegúrese de la exactitud de los datos: Es de vital importancia ingresar la información de manera precisa y sin errores. Le recomendamos revisar cuidadosamente cada campo antes de enviar la información, con el fin de evitar cualquier inconveniente o retraso en el proceso.</li>
+        <li>Utilice letras mayúsculas: Para garantizar la legibilidad de los datos, le solicitamos amablemente que complete todos los campos del formulario utilizando letras mayúsculas. Esto facilitará el procesamiento adecuado de la información suministrada.</li>
+        <li>Complete todos los campos obligatorios: Le pedimos que se asegure de proporcionar la información requerida en todos los campos obligatorios del formulario. Si omitiera algún campo necesario, recibirá un mensaje de advertencia y no podrá avanzar hasta que proporcione la información solicitada.</li>
+      </ul>
+      <br>
+      <p> Sí en algún momento del proceso de llenado del formulario surgiera alguna pregunta o requiriera asistencia, no dude en comunicarse con nosotros. Estamos aquí para brindarle ayuda y asegurar que su experiencia sea exitosa y satisfactoria..</p>
+      <center><p>Agradecemos enormemente su colaboración y entusiasmo en nuestro programa de servicio social. <br> Su participación será de gran valor y contribuirá al logro de nuestros objetivos.</p></center>
+  </div>
+</div>
+  <div class="content4">
+    <div class="card">
+      <div class="card-body">
+        <br>
+        <form action="insertar_S.php" method="POST">
+          <div class="form-group">
+            <label for="directivo">Directivo:</label>
+            <input type="text" name="directivo"class="form-control" id="directivo" required>
+            <div class="help-icon">
+              <i class="fas fa-question"></i>
+              <div class="help-text">
+                Ingrese el nombre del destinatario tal como aparece en la carta de presentación aquí.
+              </div>
+            </div>
+          </div>
+        
+        <div class="form-group">
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="cargo"class="form-control" id="cargo" required>
+          <div class="help-icon">
+            <i class="fas fa-question"></i>
+            <div class="help-text">
+              Ingrese el cargo del destinatario tal como aparece en la carta de presentación.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="escuela">Escuela:</label>
+          <input type="text" name="escuela"class="form-control" id="escuela" required>
+          <div class="help-icon">
+            <i class="fas fa-question"></i>
+            <div class="help-text">
+              Ingrese el nombre de su escuela.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="prestatario">Prestatario:</label>
+          <input text="text" name="prestatario" class="form-control" id="prestatario" required>
+            <div class="help-icon">
+            <i class="fas fa-question"></i>
+            <div class="help-text">
+              Ingrese su nombre completo.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="carrera">Carrera:</label>
+          <input type="text" name="carrera" class="form-control" id="carrera" required>
+            <div class="help-icon">
+            <i class="fas fa-question"></i>
+            <div class="help-text">
+              Ingrese su programa educativo.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="matricula">Matrícula:</label>
+          <input type="text" name="matricula"class="form-control" id="matricula" required>
+            <div class="help-icon">
+            <i class="fas fa-question"></i>
+            <div class="help-text">
+              Ingrese su número de control escolar aquí.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="horas">Número de horas:</label>
+          <input type="number" name="horas"class="form-control" id="horas" required>
+          <div class="help-icon">
+            <i class="fas fa-question"></i>
+            <div class="help-text">
+              Ingrese las horas totales a realizar.
+            </div>
+          </div>
+        </div>
+        <button type="submit" name="registrar" class="btn btn-primary">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<footer>
+  <img src="img/Final.png" class="footer-logo">
+</footer>
+</body>
+</html>

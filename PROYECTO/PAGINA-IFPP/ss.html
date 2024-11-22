@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página oficial IFPP</title>
+
+</head>
+
+    <header>
+        <div class="logo">
+          <img src="img/Logo.png" alt="Logo">
+        </div>
+        <div class="buttons">
+          <a href="index.html" class="button">Inicio</a>
+          <a href="inicio.html" class="button">Atrás</a>
+        </div>
+      </header>
+
+
+<style>
+    
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 450%;
+    }
+    h3{
+      color: #691B31 ;
+      font-size: 120%;
+    }
+    a{ 
+        font-family: Fantasy;
+        font-size: 200%;
+    }
+    h5{
+        font-family: Garamond;
+        font-size: 300%;
+        text-align: center;
+        
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#A02142;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 50px;
+    height: auto;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #A02142;
+    font-family: Monaco;
+    color: #fff;
+    font-size: 130%;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .content {
+    padding: 20px;
+    position: relative; 
+    flex: 1;
+    
+  }
+  .content2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+  margin-top: 0;
+  flex-grow: 1;
+  background: #BC955B;
+  
+}
+
+.content3 {
+  padding: 20px;
+  position: relative;
+  flex: 1;
+  background: #DDC9A3;
+  margin-bottom: 0;
+}
+   /*inicio cajas con botones*/
+
+   .box {
+      background-color: #ccc;
+      padding: 10px;
+      text-align: center;
+      display: inline-block;
+      font-size: medium;
+    }
+
+
+    .box1 {
+      width: 250px;
+      height: 150px;
+    }
+
+    .box2 {
+      width: 250px;
+      height: 150px;
+    }
+
+    .box3 {
+      width: 250px;
+      height: 150px;
+    }
+
+    .button2 {
+      padding: 10px 20px;
+      background-color: #691B31;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+      font-family: serif;
+      font-size: 120%;
+    }
+/*final cajas con botones*/
+
+/*inicio imagen portada*/
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-bottom: 30%; 
+    overflow: hidden;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/*final imagen portada*/
+
+  footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 800px;
+    height: auto;
+    width: 100%;
+  }
+
+/*inicio mapa ajuste*/
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+/*final mapa ajuste*/    
+
+  @media (min-width: 768px) {
+    .map-responsive {
+      padding-bottom: 0;
+      height: 400px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .logo {
+      flex: 1;
+    }
+
+    .buttons {
+      margin-top: 0;
+    }
+    .content2 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  }
+
+ </style>
+
+
+<h5 class="title">¿Qué servicio en la sección de Servicio Social <br>desea realizar?</h5>
+
+  <div class="content2">
+
+    <div class="box box1">
+        
+      <h3>Carta de <br> aceptación</h3>
+        <BR>
+      <a href="#" class="button2">Comenzar</a>
+    </div>
+
+    <div class="box box2">
+        
+      <h3>Carta de <br> terminación</h3>
+      <a href="#" class="button2">Comenzar</a>
+    </div>
+
+    <div class="box box3">
+        
+      <h3>Reporte de <br> horas</h3>
+      <a href="#" class="button2">Comenzar</a>
+    </div>
+  </div>
+
+
+  <footer>
+    <img src="img/Final.png" class="footer-logo">
+  </footer>
+</body>
+</html>

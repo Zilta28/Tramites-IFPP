@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión y Registro de prestatarios </title>
+    <link rel="stylesheet" href="interfaz-log.css">
+
+</head>
+<body>
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera--login">
+                    <h3>¿Ya tienes cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar sesión</button>
+                </div>
+                <div class="caja__trasera--register">
+                    <h3>¿Aún no tienes cuenta?</h3>
+                    <p>Regístrate para que puedas inciar sesión</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+
+             <!--Formulario de login y Registro-->
+            <div class="contenedor__login-register">
+                 <!--Login-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar sesión</h2>
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+
+                </form>
+
+                <!--Registro-->
+                <form action="" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>    
+</html>

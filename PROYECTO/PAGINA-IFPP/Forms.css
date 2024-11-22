@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#A02142;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .logo-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 50px;
+    height: auto;
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .button {
+    margin-right: 10px;
+    padding: 5px 20px;
+    background-color: #A02142;
+    color: #fff;
+    font-size: 130%;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .content {
+    padding: 20px;
+    position: relative; 
+    flex: 1;
+    
+  }
+  .text-container {
+    max-width: 1300px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: justify; /* Justifica el texto */
+    color: rgb(0, 0, 0); /* Color del texto */
+  }
+  p{
+    font-size: 19px;
+}
+ul{
+  font-size: 18px;
+}
+  .content4 {
+    padding: 50px;
+    background: #A02142;
+    
+  }
+  .content2 {
+    padding: 20px;
+    position: relative;
+    flex: 1;
+    background: #A02142;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+.content3 {
+  padding: 20px;
+  position: relative;
+  flex: 1;
+  background: #DDC9A3;
+  margin-bottom: 0;
+}
+
+
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+.footer-logo {
+    max-width: 800px;
+    height: auto;
+    width: 100%;
+  }
+ 
+
+  @media (min-width: 768px) {
+   
+    .logo {
+      flex: 1;
+    }
+
+    .buttons {
+      margin-top: 0;
+    }
+    .content2 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card {
+    max-width: 600px; /* Puedes ajustar este valor según tus necesidades */
+    margin: 0 auto;
+  }
+  }
+
+  

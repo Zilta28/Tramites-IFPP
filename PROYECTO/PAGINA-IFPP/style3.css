@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#A02142;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+
+}
+.table{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+.table caption{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+.table tr{
+    background-color: rgb(223, 187, 144);
+    border:1px solid #000000;
+}
+.table td {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    width: 150px; /* Establece un ancho fijo para las celdas */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que excede el ancho de la celda */
+    text-overflow: ellipsis; /* Trunca el texto que excede el ancho de la celda con puntos suspensivos */
+    cursor: pointer; /* Cambia el cursor al hacer hover sobre la celda */
+}
+.table td:hover {
+    background-color: rgb(115, 197, 197);
+    white-space: normal; /* Muestra el texto completo al hacer hover sobre la celda */
+    overflow: visible; /* Permite que el texto completo sea visible */
+    z-index: 1; /* Asegura que la celda resalte sobre las demás */
+    position: relative; /* Permite que el texto completo se muestre por encima de otras celdas */
+}
+
+.table thead th{
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+.table tbody tr:hover{
+    background-color: aqua;
+}
+
+@media screen and (max-width:600px){
+    .table{
+        border: 0px;
+    }
+    .table caption{
+        font-size: 13px;
+    }
+    .table thead{
+        display: none;
+    }
+    .table tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ccc;
+        display:block;
+    }
+    .table th, table td{
+        font-size: 12px;
+    }
+    .table td {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    .table td:last-child{
+        border-bottom: 0px;
+    }
+    .table td::before{
+        content:attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+}
